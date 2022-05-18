@@ -1,0 +1,176 @@
+html,
+body {
+    background-color: ghostwhite;
+    margin: 0;
+    line-height: 2rem;
+    font-size:.90rem;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: maroon;
+    font-size: 1rem;
+}
+
+hr {
+    width:95%;
+    border: .5px solid maroon;
+}
+
+h1:not(header h1) {
+    color: maroon;
+    font-size: 1.25rem;
+}
+
+.form-intro {
+    margin: 0 5%;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset legend{
+    text-align: center;
+    color: maroon;
+    font-size: 1.25rem;
+}
+
+.contact-information label {
+    color: rgb(89, 89, 89);
+    padding-top: 1rem;
+    padding-left: 5%;
+}
+
+.contact-information {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    float: right;
+    margin-right: 5px;
+}
+
+.newsletter {
+    margin: 2rem 5%;
+    font-size: .75rem;
+}
+.newsletter label {
+    padding-top: 2rem;
+}
+
+textarea {
+    text-align: center;
+    width: 80%;
+    border: 1px solid maroon;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+    border-radius: 5px;
+    width: 90%;
+    border: 2px solid maroon;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+button:hover {
+    opacity: 75%;
+}
+
+footer{
+    color: grey;
+    text-align: center;
+}
+
+input:focus,
+select:focus, 
+textarea:focus {
+    border: 5px solid greenyellow;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        font-size: .5rem;
+        letter-spacing: .5em;
+        max-height: 10vh;
+    }
+    body {
+        height: 65vh;
+    }
+
+    hr {
+        width: 100%;
+    }
+    form {
+        width: 65%;
+        margin: 10% auto;
+    }
+    .form-intro {
+        font-size: .75rem;
+    }
+    .contact-information {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        gap: 5px;
+    }
+    .contact-information label {
+        width: 25%;
+        padding-left: 0;
+    }
+
+    .contact-information input, select {
+        width: 65%;
+        margin: 10px;
+    }
+
+    #zip {
+        width: 30%;
+        align-self: left;
+    }
+
+    .newsletter {
+        margin: 36px auto;
+    }
+
+    textarea {
+        padding: 2rem 0;
+        margin-right: 0;
+        width: 100%;
+        }
+
+    button {
+        width: 100%;
+    }
+}
+
