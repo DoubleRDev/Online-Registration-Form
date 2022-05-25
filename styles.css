@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: ghostwhite;
+    background-image: linear-gradient(ghostwhite, lightcoral);
     margin: 0;
     line-height: 2rem;
     font-size:.90rem;
@@ -29,6 +29,7 @@ h1:not(header h1) {
 }
 
 h2 {
+    text-shadow: 1px 1px 1.5px black;
     font-size: 1rem;
     color: lightcoral;
 }
@@ -45,6 +46,7 @@ fieldset {
 }
 
 fieldset legend{
+    text-shadow: 1px 1px 1.5px black;
     color: lightcoral;
     font-weight: bold;
 }
@@ -68,6 +70,9 @@ input::placeholder {
 }
 
 .newsletter {
+    background-color: ghostwhite;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(248, 248, 255, .85);
     margin: 0 5%;
 }
 
@@ -76,7 +81,8 @@ input::placeholder {
 }
 
 textarea {
-    width: 90%;
+    transition: 1s;
+    width: 80%;
     min-height: 100px;
     border: 1px solid lightcoral;
     border-radius: 5px;
@@ -95,6 +101,7 @@ select {
 }
 
 #zip {
+    transition: 1s;
     width: 50%;
 }
 
@@ -112,7 +119,9 @@ button {
 }
 
 button:hover {
-    opacity: 50%;
+    transition: 1s;
+    background-color: white;
+    color: black;
 }
 
 footer{
@@ -124,7 +133,8 @@ input:focus,
 select:focus, 
 textarea:focus,
 button:focus {
-    box-shadow:  0 3px 5px  rgba(128, 0, 128, 1);
+    transition: 1s;
+    box-shadow:  0 0 25px  rgba(128, 0, 128, 1);
 }
 
 @media (min-width: 768px) {
@@ -166,11 +176,13 @@ button:focus {
     }
 
     #zip {
+        transition: 1s;
         width: 18%;
     }
 
     textarea {
-        width: 100%;
+        transition: 1s;
+        width: 98%;
     }
 
     button {
